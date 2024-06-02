@@ -1,7 +1,7 @@
 {
   "name": "qc-read-sdk",
   "version": "1.0.0",
-  "description": "DP Read API SDK",
+  "description": "Quantum Coin Read API SDK",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
