@@ -1,4 +1,4 @@
-# AccountsReadApi.TransactionType
+# QcReadApi.TransactionType
 
 ## Enum
 

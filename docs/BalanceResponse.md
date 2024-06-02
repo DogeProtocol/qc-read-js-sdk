@@ -1,4 +1,4 @@
-# AccountsReadApi.BalanceResponse
+# QcReadApi.BalanceResponse
 
 ## Properties
 

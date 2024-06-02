@@ -1,4 +1,4 @@
-# AccountsReadApi.AccountPendingTransactionSummaryResponse
+# QcReadApi.AccountPendingTransactionSummaryResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# AccountsReadApi.Balance
+# QcReadApi.Balance
 
 ## Properties
 

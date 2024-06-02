@@ -1,4 +1,4 @@
-# AccountsReadApi.AccountsApi
+# QcReadApi.AccountsApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,9 +19,9 @@ Get account balance
 ### Example
 
 ```javascript
-import AccountsReadApi from 'accounts_read_api';
+import QcReadApi from 'qc_read_api';
 
-let apiInstance = new AccountsReadApi.AccountsApi();
+let apiInstance = new QcReadApi.AccountsApi();
 let address = "address_example"; // String | the string representing the address
 apiInstance.getAccountBalance(address, (error, data, response) => {
   if (error) {
@@ -62,9 +62,9 @@ List account pending transactions info by page
 ### Example
 
 ```javascript
-import AccountsReadApi from 'accounts_read_api';
+import QcReadApi from 'qc_read_api';
 
-let apiInstance = new AccountsReadApi.AccountsApi();
+let apiInstance = new QcReadApi.AccountsApi();
 let address = "address_example"; // String | the string representing the address
 let pageIndex = 56; // Number | the interger representing page number
 apiInstance.listAccountPendingTransactions(address, pageIndex, (error, data, response) => {
@@ -107,9 +107,9 @@ List account transactions info by page
 ### Example
 
 ```javascript
-import AccountsReadApi from 'accounts_read_api';
+import QcReadApi from 'qc_read_api';
 
-let apiInstance = new AccountsReadApi.AccountsApi();
+let apiInstance = new QcReadApi.AccountsApi();
 let address = "address_example"; // String | the string representing the address
 let pageIndex = 56; // Number | the interger representing page number
 apiInstance.listAccountTransactions(address, pageIndex, (error, data, response) => {

@@ -1,4 +1,4 @@
-# AccountsReadApi.ErrorResponseModel
+# QcReadApi.ErrorResponseModel
 
 ## Properties
 

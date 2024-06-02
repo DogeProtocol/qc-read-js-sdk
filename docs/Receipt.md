@@ -1,4 +1,4 @@
-# AccountsReadApi.Receipt
+# QcReadApi.Receipt
 
 ## Properties
 
