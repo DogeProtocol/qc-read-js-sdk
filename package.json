@@ -48,5 +48,9 @@
   "bugs": {
     "url": "https://github.com/DogeProtocol/qc-read-js-sdk/issues"
   },
-  "homepage": "https://github.com/DogeProtocol/qc-read-js-sdk#readme"
+  "homepage": "https://github.com/DogeProtocol/qc-read-js-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DogeProtocol/qc-read-js-sdk"
+},
 }
