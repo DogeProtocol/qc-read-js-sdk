@@ -46,7 +46,7 @@
   "author": "Doge Protocol Community",
   "license": "MIT",
   "bugs": {
-    "url": https://github.com/DogeProtocol/read-js-sdk/issues"
+    "url": "https://github.com/DogeProtocol/read-js-sdk/issues"
   },
   "homepage": "https://github.com/DogeProtocol/read-js-sdk#readme"
 }
