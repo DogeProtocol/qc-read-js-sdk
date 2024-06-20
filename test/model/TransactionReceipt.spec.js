@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcReadApi.Receipt();
+    instance = new QcReadApi.TransactionReceipt();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,46 +47,46 @@
       object[property] = value;
   }
 
-  describe('Receipt', function() {
-    it('should create an instance of Receipt', function() {
-      // uncomment below and update the code to test Receipt
-      //var instance = new QcReadApi.Receipt();
-      //expect(instance).to.be.a(QcReadApi.Receipt);
-    });
-
-    it('should have the property type (base name: "type")', function() {
-      // uncomment below and update the code to test the property type
-      //var instance = new QcReadApi.Receipt();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new QcReadApi.Receipt();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property contractAddress (base name: "contractAddress")', function() {
-      // uncomment below and update the code to test the property contractAddress
-      //var instance = new QcReadApi.Receipt();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property gasUsed (base name: "gasUsed")', function() {
-      // uncomment below and update the code to test the property gasUsed
-      //var instance = new QcReadApi.Receipt();
-      //expect(instance).to.be();
+  describe('TransactionReceipt', function() {
+    it('should create an instance of TransactionReceipt', function() {
+      // uncomment below and update the code to test TransactionReceipt
+      //var instance = new QcReadApi.TransactionReceipt();
+      //expect(instance).to.be.a(QcReadApi.TransactionReceipt);
     });
 
     it('should have the property cumulativeGasUsed (base name: "cumulativeGasUsed")', function() {
       // uncomment below and update the code to test the property cumulativeGasUsed
-      //var instance = new QcReadApi.Receipt();
+      //var instance = new QcReadApi.TransactionReceipt();
       //expect(instance).to.be();
     });
 
     it('should have the property effectiveGasPrice (base name: "effectiveGasPrice")', function() {
       // uncomment below and update the code to test the property effectiveGasPrice
-      //var instance = new QcReadApi.Receipt();
+      //var instance = new QcReadApi.TransactionReceipt();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property gasUsed (base name: "gasUsed")', function() {
+      // uncomment below and update the code to test the property gasUsed
+      //var instance = new QcReadApi.TransactionReceipt();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instance = new QcReadApi.TransactionReceipt();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property hash (base name: "hash")', function() {
+      // uncomment below and update the code to test the property hash
+      //var instance = new QcReadApi.TransactionReceipt();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instance = new QcReadApi.TransactionReceipt();
       //expect(instance).to.be();
     });
 

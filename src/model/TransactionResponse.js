@@ -12,21 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import Balance from './Balance';
+import TransactionDetails from './TransactionDetails';
 
 /**
- * The BalanceResponse model module.
- * @module model/BalanceResponse
+ * The TransactionResponse model module.
+ * @module model/TransactionResponse
  * @version v1
  */
-class BalanceResponse {
+class TransactionResponse {
     /**
-     * Constructs a new <code>BalanceResponse</code>.
-     * @alias module:model/BalanceResponse
+     * Constructs a new <code>TransactionResponse</code>.
+     * @alias module:model/TransactionResponse
      */
     constructor() { 
         
-        BalanceResponse.initialize(this);
+        TransactionResponse.initialize(this);
     }
 
     /**
@@ -38,32 +38,32 @@ class BalanceResponse {
     }
 
     /**
-     * Constructs a <code>BalanceResponse</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>TransactionResponse</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/BalanceResponse} obj Optional instance to populate.
-     * @return {module:model/BalanceResponse} The populated <code>BalanceResponse</code> instance.
+     * @param {module:model/TransactionResponse} obj Optional instance to populate.
+     * @return {module:model/TransactionResponse} The populated <code>TransactionResponse</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new BalanceResponse();
+            obj = obj || new TransactionResponse();
 
             if (data.hasOwnProperty('result')) {
-                obj['result'] = ApiClient.convertToType(data['result'], Balance);
+                obj['result'] = TransactionDetails.constructFromObject(data['result']);
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>BalanceResponse</code>.
+     * Validates the JSON data with respect to <code>TransactionResponse</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>BalanceResponse</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>TransactionResponse</code>.
      */
     static validateJSON(data) {
         // validate the optional field `result`
         if (data['result']) { // data not null
-          Balance.validateJSON(data['result']);
+          TransactionDetails.validateJSON(data['result']);
         }
 
         return true;
@@ -75,14 +75,14 @@ class BalanceResponse {
 
 
 /**
- * @member {module:model/Balance} result
+ * @member {module:model/TransactionDetails} result
  */
-BalanceResponse.prototype['result'] = undefined;
+TransactionResponse.prototype['result'] = undefined;
 
 
 
 
 
 
-export default BalanceResponse;
+export default TransactionResponse;
 

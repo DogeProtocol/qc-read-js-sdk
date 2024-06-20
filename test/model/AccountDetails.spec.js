@@ -28,6 +28,7 @@
   var instance;
 
   beforeEach(function() {
+    instance = new QcReadApi.AccountDetails();
   });
 
   var getProperty = function(object, getter, property) {
@@ -46,11 +47,29 @@
       object[property] = value;
   }
 
-  describe('TransactionType', function() {
-    it('should create an instance of TransactionType', function() {
-      // uncomment below and update the code to test TransactionType
-      //var instance = new QcReadApi.TransactionType();
-      //expect(instance).to.be.a(QcReadApi.TransactionType);
+  describe('AccountDetails', function() {
+    it('should create an instance of AccountDetails', function() {
+      // uncomment below and update the code to test AccountDetails
+      //var instance = new QcReadApi.AccountDetails();
+      //expect(instance).to.be.a(QcReadApi.AccountDetails);
+    });
+
+    it('should have the property balance (base name: "balance")', function() {
+      // uncomment below and update the code to test the property balance
+      //var instance = new QcReadApi.AccountDetails();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonce (base name: "nonce")', function() {
+      // uncomment below and update the code to test the property nonce
+      //var instance = new QcReadApi.AccountDetails();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property blockNumber (base name: "blockNumber")', function() {
+      // uncomment below and update the code to test the property blockNumber
+      //var instance = new QcReadApi.AccountDetails();
+      //expect(instance).to.be();
     });
 
   });

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcReadApi.AccountTransactionSummaryResponse();
+    instance = new QcReadApi.ReadApiApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,25 +47,27 @@
       object[property] = value;
   }
 
-  describe('AccountTransactionSummaryResponse', function() {
-    it('should create an instance of AccountTransactionSummaryResponse', function() {
-      // uncomment below and update the code to test AccountTransactionSummaryResponse
-      //var instance = new QcReadApi.AccountTransactionSummaryResponse();
-      //expect(instance).to.be.a(QcReadApi.AccountTransactionSummaryResponse);
+  describe('ReadApiApi', function() {
+    describe('getAccountDetails', function() {
+      it('should call getAccountDetails successfully', function(done) {
+        //uncomment below and update the code to test getAccountDetails
+        //instance.getAccountDetails(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property pageCount (base name: "pageCount")', function() {
-      // uncomment below and update the code to test the property pageCount
-      //var instance = new QcReadApi.AccountTransactionSummaryResponse();
-      //expect(instance).to.be();
+    describe('getTransaction', function() {
+      it('should call getTransaction successfully', function(done) {
+        //uncomment below and update the code to test getTransaction
+        //instance.getTransaction(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property result (base name: "result")', function() {
-      // uncomment below and update the code to test the property result
-      //var instance = new QcReadApi.AccountTransactionSummaryResponse();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

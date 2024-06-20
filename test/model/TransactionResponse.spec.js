@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcReadApi.AccountsApi();
+    instance = new QcReadApi.TransactionResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,19 @@
       object[property] = value;
   }
 
-  describe('AccountsApi', function() {
-    describe('getAccountBalance', function() {
-      it('should call getAccountBalance successfully', function(done) {
-        //uncomment below and update the code to test getAccountBalance
-        //instance.getAccountBalance(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('TransactionResponse', function() {
+    it('should create an instance of TransactionResponse', function() {
+      // uncomment below and update the code to test TransactionResponse
+      //var instance = new QcReadApi.TransactionResponse();
+      //expect(instance).to.be.a(QcReadApi.TransactionResponse);
     });
-    describe('listAccountPendingTransactions', function() {
-      it('should call listAccountPendingTransactions successfully', function(done) {
-        //uncomment below and update the code to test listAccountPendingTransactions
-        //instance.listAccountPendingTransactions(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property result (base name: "result")', function() {
+      // uncomment below and update the code to test the property result
+      //var instance = new QcReadApi.TransactionResponse();
+      //expect(instance).to.be();
     });
-    describe('listAccountTransactions', function() {
-      it('should call listAccountTransactions successfully', function(done) {
-        //uncomment below and update the code to test listAccountTransactions
-        //instance.listAccountTransactions(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

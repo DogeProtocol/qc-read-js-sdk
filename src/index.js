@@ -13,16 +13,13 @@
 
 
 import ApiClient from './ApiClient';
-import AccountPendingTransactionSummary from './model/AccountPendingTransactionSummary';
-import AccountPendingTransactionSummaryResponse from './model/AccountPendingTransactionSummaryResponse';
-import AccountTransactionSummary from './model/AccountTransactionSummary';
-import AccountTransactionSummaryResponse from './model/AccountTransactionSummaryResponse';
-import Balance from './model/Balance';
-import BalanceResponse from './model/BalanceResponse';
+import AccountDetails from './model/AccountDetails';
+import AccountDetailsResponse from './model/AccountDetailsResponse';
 import ErrorResponseModel from './model/ErrorResponseModel';
-import Receipt from './model/Receipt';
-import TransactionType from './model/TransactionType';
-import AccountsApi from './api/AccountsApi';
+import TransactionDetails from './model/TransactionDetails';
+import TransactionReceipt from './model/TransactionReceipt';
+import TransactionResponse from './model/TransactionResponse';
+import ReadApiApi from './api/ReadApiApi';
 
 
 /**
@@ -64,40 +61,16 @@ export {
     ApiClient,
 
     /**
-     * The AccountPendingTransactionSummary model constructor.
-     * @property {module:model/AccountPendingTransactionSummary}
+     * The AccountDetails model constructor.
+     * @property {module:model/AccountDetails}
      */
-    AccountPendingTransactionSummary,
+    AccountDetails,
 
     /**
-     * The AccountPendingTransactionSummaryResponse model constructor.
-     * @property {module:model/AccountPendingTransactionSummaryResponse}
+     * The AccountDetailsResponse model constructor.
+     * @property {module:model/AccountDetailsResponse}
      */
-    AccountPendingTransactionSummaryResponse,
-
-    /**
-     * The AccountTransactionSummary model constructor.
-     * @property {module:model/AccountTransactionSummary}
-     */
-    AccountTransactionSummary,
-
-    /**
-     * The AccountTransactionSummaryResponse model constructor.
-     * @property {module:model/AccountTransactionSummaryResponse}
-     */
-    AccountTransactionSummaryResponse,
-
-    /**
-     * The Balance model constructor.
-     * @property {module:model/Balance}
-     */
-    Balance,
-
-    /**
-     * The BalanceResponse model constructor.
-     * @property {module:model/BalanceResponse}
-     */
-    BalanceResponse,
+    AccountDetailsResponse,
 
     /**
      * The ErrorResponseModel model constructor.
@@ -106,20 +79,26 @@ export {
     ErrorResponseModel,
 
     /**
-     * The Receipt model constructor.
-     * @property {module:model/Receipt}
+     * The TransactionDetails model constructor.
+     * @property {module:model/TransactionDetails}
      */
-    Receipt,
+    TransactionDetails,
 
     /**
-     * The TransactionType model constructor.
-     * @property {module:model/TransactionType}
+     * The TransactionReceipt model constructor.
+     * @property {module:model/TransactionReceipt}
      */
-    TransactionType,
+    TransactionReceipt,
 
     /**
-    * The AccountsApi service constructor.
-    * @property {module:api/AccountsApi}
+     * The TransactionResponse model constructor.
+     * @property {module:model/TransactionResponse}
+     */
+    TransactionResponse,
+
+    /**
+    * The ReadApiApi service constructor.
+    * @property {module:api/ReadApiApi}
     */
-    AccountsApi
+    ReadApiApi
 };
