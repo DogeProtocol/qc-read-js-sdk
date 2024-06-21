@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The Balance model module.
- * @module model/Balance
+ * The AccountDetails model module.
+ * @module model/AccountDetails
  * @version v1
  */
-class Balance {
+class AccountDetails {
     /**
-     * Constructs a new <code>Balance</code>.
-     * @alias module:model/Balance
+     * Constructs a new <code>AccountDetails</code>.
+     * @alias module:model/AccountDetails
      */
     constructor() { 
         
-        Balance.initialize(this);
+        AccountDetails.initialize(this);
     }
 
     /**
@@ -37,38 +37,39 @@ class Balance {
     }
 
     /**
-     * Constructs a <code>Balance</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>AccountDetails</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/Balance} obj Optional instance to populate.
-     * @return {module:model/Balance} The populated <code>Balance</code> instance.
+     * @param {module:model/AccountDetails} obj Optional instance to populate.
+     * @return {module:model/AccountDetails} The populated <code>AccountDetails</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new Balance();
+            obj = obj || new AccountDetails();
 
             if (data.hasOwnProperty('balance')) {
-                obj['balance'] = ApiClient.convertToType(data['balance'], Object);
+                obj['balance'] = ApiClient.convertToType(data['balance'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], Object);
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
             if (data.hasOwnProperty('blockNumber')) {
                 obj['blockNumber'] = ApiClient.convertToType(data['blockNumber'], 'Number');
-            }
-            if (data.hasOwnProperty('blockDate')) {
-                obj['blockDate'] = ApiClient.convertToType(data['blockDate'], 'Date');
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>Balance</code>.
+     * Validates the JSON data with respect to <code>AccountDetails</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>Balance</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AccountDetails</code>.
      */
     static validateJSON(data) {
+        // ensure the json data is a string
+        if (data['balance'] && !(typeof data['balance'] === 'string' || data['balance'] instanceof String)) {
+            throw new Error("Expected the field `balance` to be a primitive type in the JSON string but got " + data['balance']);
+        }
 
         return true;
     }
@@ -79,29 +80,25 @@ class Balance {
 
 
 /**
- * @member {Object} balance
+ * @member {String} balance
  */
-Balance.prototype['balance'] = undefined;
+AccountDetails.prototype['balance'] = undefined;
 
 /**
- * @member {Object} nonce
+ * @member {Number} nonce
  */
-Balance.prototype['nonce'] = undefined;
+AccountDetails.prototype['nonce'] = undefined;
 
 /**
+ * The block number as of which the details were retrieved
  * @member {Number} blockNumber
  */
-Balance.prototype['blockNumber'] = undefined;
-
-/**
- * @member {Date} blockDate
- */
-Balance.prototype['blockDate'] = undefined;
+AccountDetails.prototype['blockNumber'] = undefined;
 
 
 
 
 
 
-export default Balance;
+export default AccountDetails;
 
