@@ -1,11 +1,11 @@
-# QcReadApi.ReadApiApi
+# QcReadApi.ReadApi
 
 All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAccountDetails**](ReadApiApi.md#getAccountDetails) | **GET** /accounts/{address} | Get account details
-[**getTransaction**](ReadApiApi.md#getTransaction) | **GET** /transaction/{hash} | Get Transaction
+[**getAccountDetails**](ReadApi.md#getAccountDetails) | **GET** /accounts/{address} | Get account details
+[**getTransaction**](ReadApi.md#getTransaction) | **GET** /transaction/{hash} | Get Transaction
 
 
 
@@ -20,7 +20,7 @@ Get account details
 ```javascript
 import QcReadApi from 'qc_read_api';
 
-let apiInstance = new QcReadApi.ReadApiApi();
+let apiInstance = new QcReadApi.ReadApi();
 let address = "address_example"; // String | the string representing the address
 apiInstance.getAccountDetails(address, (error, data, response) => {
   if (error) {
@@ -63,7 +63,7 @@ Get Transaction
 ```javascript
 import QcReadApi from 'qc_read_api';
 
-let apiInstance = new QcReadApi.ReadApiApi();
+let apiInstance = new QcReadApi.ReadApi();
 let hash = "hash_example"; // String | The transaction hash
 apiInstance.getTransaction(hash, (error, data, response) => {
   if (error) {

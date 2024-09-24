@@ -19,7 +19,7 @@ import ErrorResponseModel from './model/ErrorResponseModel';
 import TransactionDetails from './model/TransactionDetails';
 import TransactionReceipt from './model/TransactionReceipt';
 import TransactionResponse from './model/TransactionResponse';
-import ReadApiApi from './api/ReadApiApi';
+import ReadApi from './api/ReadApi';
 
 
 /**
@@ -97,8 +97,8 @@ export {
     TransactionResponse,
 
     /**
-    * The ReadApiApi service constructor.
-    * @property {module:api/ReadApiApi}
+    * The ReadApi service constructor.
+    * @property {module:api/ReadApi}
     */
-    ReadApiApi
+    ReadApi
 };

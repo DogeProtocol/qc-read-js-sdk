@@ -18,15 +18,15 @@ import ErrorResponseModel from '../model/ErrorResponseModel';
 import TransactionResponse from '../model/TransactionResponse';
 
 /**
-* ReadApi service.
-* @module api/ReadApiApi
+* Read service.
+* @module api/ReadApi
 * @version v1
 */
-export default class ReadApiApi {
+export default class ReadApi {
 
     /**
-    * Constructs a new ReadApiApi. 
-    * @alias module:api/ReadApiApi
+    * Constructs a new ReadApi. 
+    * @alias module:api/ReadApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instance} if unspecified.
@@ -38,7 +38,7 @@ export default class ReadApiApi {
 
     /**
      * Callback function to receive the result of the getAccountDetails operation.
-     * @callback module:api/ReadApiApi~getAccountDetailsCallback
+     * @callback module:api/ReadApi~getAccountDetailsCallback
      * @param {String} error Error message, if any.
      * @param {module:model/AccountDetailsResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -47,7 +47,7 @@ export default class ReadApiApi {
     /**
      * Get account details
      * @param {String} address the string representing the address
-     * @param {module:api/ReadApiApi~getAccountDetailsCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ReadApi~getAccountDetailsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AccountDetailsResponse}
      */
     getAccountDetails(address, callback) {
@@ -80,7 +80,7 @@ export default class ReadApiApi {
 
     /**
      * Callback function to receive the result of the getTransaction operation.
-     * @callback module:api/ReadApiApi~getTransactionCallback
+     * @callback module:api/ReadApi~getTransactionCallback
      * @param {String} error Error message, if any.
      * @param {module:model/TransactionResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -89,7 +89,7 @@ export default class ReadApiApi {
     /**
      * Get Transaction
      * @param {String} hash The transaction hash
-     * @param {module:api/ReadApiApi~getTransactionCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/ReadApi~getTransactionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TransactionResponse}
      */
     getTransaction(hash, callback) {

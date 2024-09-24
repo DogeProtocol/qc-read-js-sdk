@@ -1,12 +1,11 @@
 .babelrc
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/AccountDetails.md
 docs/AccountDetailsResponse.md
 docs/ErrorResponseModel.md
-docs/ReadApiApi.md
+docs/ReadApi.md
 docs/TransactionDetails.md
 docs/TransactionReceipt.md
 docs/TransactionResponse.md
@@ -14,7 +13,7 @@ git_push.sh
 mocha.opts
 package.json
 src/ApiClient.js
-src/api/ReadApiApi.js
+src/api/ReadApi.js
 src/index.js
 src/model/AccountDetails.js
 src/model/AccountDetailsResponse.js
@@ -22,7 +21,7 @@ src/model/ErrorResponseModel.js
 src/model/TransactionDetails.js
 src/model/TransactionReceipt.js
 src/model/TransactionResponse.js
-test/api/ReadApiApi.spec.js
+test/api/ReadApi.spec.js
 test/model/AccountDetails.spec.js
 test/model/AccountDetailsResponse.spec.js
 test/model/ErrorResponseModel.spec.js

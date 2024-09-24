@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcReadApi.ReadApiApi();
+    instance = new QcReadApi.ReadApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,7 +47,7 @@
       object[property] = value;
   }
 
-  describe('ReadApiApi', function() {
+  describe('ReadApi', function() {
     describe('getAccountDetails', function() {
       it('should call getAccountDetails successfully', function(done) {
         //uncomment below and update the code to test getAccountDetails
