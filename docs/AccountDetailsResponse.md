@@ -1,9 +1,9 @@
-# QcReadApi.BalanceResponse
+# QcReadApi.AccountDetailsResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**Balance**](Balance.md) |  | [optional] 
+**result** | [**AccountDetails**](AccountDetails.md) |  | [optional] 
 
 

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcReadApi.Balance();
+    instance = new QcReadApi.AccountDetailsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,16 @@
       object[property] = value;
   }
 
-  describe('Balance', function() {
-    it('should create an instance of Balance', function() {
-      // uncomment below and update the code to test Balance
-      //var instance = new QcReadApi.Balance();
-      //expect(instance).to.be.a(QcReadApi.Balance);
+  describe('AccountDetailsResponse', function() {
+    it('should create an instance of AccountDetailsResponse', function() {
+      // uncomment below and update the code to test AccountDetailsResponse
+      //var instance = new QcReadApi.AccountDetailsResponse();
+      //expect(instance).to.be.a(QcReadApi.AccountDetailsResponse);
     });
 
-    it('should have the property balance (base name: "balance")', function() {
-      // uncomment below and update the code to test the property balance
-      //var instance = new QcReadApi.Balance();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property nonce (base name: "nonce")', function() {
-      // uncomment below and update the code to test the property nonce
-      //var instance = new QcReadApi.Balance();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property blockNumber (base name: "blockNumber")', function() {
-      // uncomment below and update the code to test the property blockNumber
-      //var instance = new QcReadApi.Balance();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property blockDate (base name: "blockDate")', function() {
-      // uncomment below and update the code to test the property blockDate
-      //var instance = new QcReadApi.Balance();
+    it('should have the property result (base name: "result")', function() {
+      // uncomment below and update the code to test the property result
+      //var instance = new QcReadApi.AccountDetailsResponse();
       //expect(instance).to.be();
     });
 

@@ -102,7 +102,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 var QcReadApi = require('qc_read_api');
 
 
-var api = new QcReadApi.AccountsApi()
+var api = new QcReadApi.ReadApi()
 var address = "address_example"; // {String} the string representing the address
 var callback = function(error, data, response) {
   if (error) {
@@ -111,7 +111,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.getAccountBalance(address, callback);
+api.getAccountDetails(address, callback);
 
 ```
 
@@ -121,22 +121,18 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*QcReadApi.AccountsApi* | [**getAccountBalance**](docs/AccountsApi.md#getAccountBalance) | **GET** /api/accounts/{address}/balance | Get account balance
-*QcReadApi.AccountsApi* | [**listAccountPendingTransactions**](docs/AccountsApi.md#listAccountPendingTransactions) | **GET** /api/accounts/{address}/pending/txn/page/{pageIndex} | List account pending transactions info by page
-*QcReadApi.AccountsApi* | [**listAccountTransactions**](docs/AccountsApi.md#listAccountTransactions) | **GET** /api/accounts/{address}/txn/page/{pageIndex} | List account transactions info by page
+*QcReadApi.ReadApi* | [**getAccountDetails**](docs/ReadApi.md#getAccountDetails) | **GET** /accounts/{address} | Get account details
+*QcReadApi.ReadApi* | [**getTransaction**](docs/ReadApi.md#getTransaction) | **GET** /transaction/{hash} | Get Transaction
 
 
 ## Documentation for Models
 
- - [QcReadApi.AccountPendingTransactionSummary](docs/AccountPendingTransactionSummary.md)
- - [QcReadApi.AccountPendingTransactionSummaryResponse](docs/AccountPendingTransactionSummaryResponse.md)
- - [QcReadApi.AccountTransactionSummary](docs/AccountTransactionSummary.md)
- - [QcReadApi.AccountTransactionSummaryResponse](docs/AccountTransactionSummaryResponse.md)
- - [QcReadApi.Balance](docs/Balance.md)
- - [QcReadApi.BalanceResponse](docs/BalanceResponse.md)
+ - [QcReadApi.AccountDetails](docs/AccountDetails.md)
+ - [QcReadApi.AccountDetailsResponse](docs/AccountDetailsResponse.md)
  - [QcReadApi.ErrorResponseModel](docs/ErrorResponseModel.md)
- - [QcReadApi.Receipt](docs/Receipt.md)
- - [QcReadApi.TransactionType](docs/TransactionType.md)
+ - [QcReadApi.TransactionDetails](docs/TransactionDetails.md)
+ - [QcReadApi.TransactionReceipt](docs/TransactionReceipt.md)
+ - [QcReadApi.TransactionResponse](docs/TransactionResponse.md)
 
 
 ## Documentation for Authorization
