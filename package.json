@@ -1,7 +1,7 @@
 {
-  "name": "qc-read-sdk",
-  "version": "1.0.1",
-  "description": "DP Read API SDK",
+  "name": "qc-read-js-sdk",
+  "version": "1.0.2",
+  "description": "Quantum Coin Read API SDK",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
@@ -46,7 +46,11 @@
   "author": "Doge Protocol Community",
   "license": "MIT",
   "bugs": {
-    "url": https://github.com/DogeProtocol/read-js-sdk/issues"
+    "url": "https://github.com/DogeProtocol/qc-read-js-sdk/issues"
   },
-  "homepage": "https://github.com/DogeProtocol/read-js-sdk#readme"
+  "homepage": "https://github.com/DogeProtocol/qc-read-js-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DogeProtocol/qc-read-js-sdk"
+  }
 }
